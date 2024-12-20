@@ -1,0 +1,176 @@
+/* Este bloque define el estilo principal del cuerpo de la página, incluyendo el fondo, las fuentes y la alineación de texto. */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Este pseudo-elemento se usa para centrar verticalmente el contenido dentro del cuerpo. */
+body:before {
+    content: '';
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* El contenedor principal para agrupar todos los elementos del formulario con estilos de fondo y espaciado. */
+.contenedor {
+    display: inline-block;
+    vertical-align: middle;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.1);
+    width: 25rem;
+    text-align: left;
+}
+
+/* Define un grupo de entrada, incluyendo márgenes inferiores para separar las secciones. */
+.grupo-entrada {
+    margin-bottom: 1.5rem;
+}
+
+/* Estilo para las etiquetas que describen los campos de entrada. */
+.etiqueta {
+    display: block;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+/* Envoltura para las entradas de texto con posicionamiento relativo para el símbolo de moneda. */
+.envoltura-entrada {
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+/* Estiliza el símbolo de moneda que aparece dentro del campo de entrada. */
+.simbolo-moneda {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    padding-left: 0.25rem;
+}
+
+/* Estilo para el campo de entrada donde el usuario escribe el monto a invertir. */
+.entrada-monto {
+    width: 100%;
+    border: none;
+    border-bottom: 0.125rem solid #e0e0e0;
+    padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+    color: #999;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Estilo cuando el campo de entrada está enfocado. */
+.entrada-monto:focus {
+    border-bottom-color: #2196F3;
+}
+
+/* Define el estilo del texto de ayuda debajo de los campos de entrada. */
+.texto-ayuda {
+    color: #666;
+    margin-top: 0.25rem;
+}
+
+/* Agrupa los botones de selección de tipo de plazo con un diseño en línea. */
+.grupo-botones {
+    display: inline-flex;
+    width: 100%;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Estilo para los botones que permiten seleccionar el tipo de plazo. */
+.boton-plazo {
+    width: 50%;
+    padding: 0.75rem;
+    border: 0.0625rem solid #e0e0e0;
+    border-radius: 0.25rem;
+    background: white;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Define el estilo para el botón activo, resaltándolo para indicar selección. */
+.boton-plazo.activo {
+    border-color: #2196F3;
+    background-color: #f5f9ff;
+}
+
+/* Sección que contiene las opciones de plazo en días. */
+.opciones-plazo {
+    margin-bottom: 1.5rem;
+}
+
+/* Agrupa los botones para seleccionar plazos específicos. */
+.grupo-plazos {
+    display: inline-flex;
+    width: 100%;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Estilo para los botones de selección de plazo. */
+.boton-plazo {
+    padding: 0.75rem;
+    border: 0.0625rem solid #e0e0e0;
+    border-radius: 0.25rem;
+    background: white;
+    cursor: pointer;
+    color: #333;
+    width: 25%;
+}
+
+/* Resalta el botón activo dentro de las opciones de plazo. */
+.boton-plazo.activo {
+    border-color: #2196F3;
+    background-color: #f5f9ff;
+}
+
+/* Estilo para el botón "otro plazo". */
+.boton-plazo.otro {
+    color: #2196F3;
+}
+
+/* Contenedor para mostrar los resultados de la inversión, incluyendo ganancias e interés. */
+.info-resultados {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Define el estilo para cada fila de resultados, separando el texto y los valores. */
+.fila-resultado {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+/* Elimina el margen inferior de la última fila de resultados. */
+.fila-resultado:last-child {
+    margin-bottom: 0;
+}
+
+/* Estilo especial para resaltar la tasa de interés en verde. */
+.tasa-interes {
+    color: #4caf50;
+}
+
+/* Estilo para el botón principal de acción, con un fondo amarillo para destacar. */
+.boton-invertir {
+    width: 100%;
+    padding: 1rem;
+    background-color: #ffeb3b;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: #333;
+}
